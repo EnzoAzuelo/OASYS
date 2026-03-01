@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+/* Define your design variables from the Figma designs here */
+@theme {
+  --color-oasys-blue: #3b82f6; /* */
+  --color-dark-bg: #1a1a1a;    /* */
+  --color-card-bg: #262626;    /* */
+  --radius-oasys: 40px;        /* */
+}
+
+/* Base styles using standard CSS (avoiding @apply here prevents the error) */
+:root {
+  background-color: var(--color-dark-bg);
+  color: white;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* Custom classes using the variables we defined above */
+.bg-dark-card {
+  background-color: var(--color-card-bg);
+  border-radius: var(--radius-oasys);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.btn-blue {
+  background-color: var(--color-oasys-blue);
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-blue:hover {
+  filter: brightness(1.1);
+}

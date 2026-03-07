@@ -2,9 +2,9 @@
 
 export default function LoginModal({ onClose }: { onClose: () => void }) {
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm">
+    <div className="fixed inset-0 z-100 flex items-center justify-center bg-black/60 backdrop-blur-sm">
       {/* Modal Container */}
-      <div className="relative w-full max-w-md bg-[#262626] rounded-[40px] p-10 shadow-2xl border border-white/10">
+      <div className="relative w-full max-w-md bg-card-bg rounded-oasys p-10 shadow-2xl border border-white/10">
         
         {/* Brand */}
         <h2 className="text-blue-500 font-bold text-2xl mb-8">OASYS</h2>
@@ -41,10 +41,10 @@ export default function LoginModal({ onClose }: { onClose: () => void }) {
 
         {/* Buttons */}
         <div className="mt-10 space-y-3">
-          <button className="w-full bg-[#3b82f6] hover:bg-blue-600 text-white font-bold py-3 rounded-full transition-all">
+          <button className="w-full bg-oasys-blue hover:bg-blue-600 text-white font-bold py-3 rounded-full transition-all">
             Log in
           </button>
-          <button className="w-full bg-[#3b82f6] hover:bg-blue-600 text-white font-bold py-3 rounded-full transition-all">
+          <button className="w-full bg-oasys-blue hover:bg-blue-600 text-white font-bold py-3 rounded-full transition-all">
             Sign Up
           </button>
         </div>

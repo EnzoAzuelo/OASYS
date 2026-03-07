@@ -1,5 +1,24 @@
 @import "tailwindcss";
 
+@layer components {
+  .nav-hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none; /* Prevents clicking links while invisible */
+  }
+
+  .nav-visible {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+/* Ensure the smooth animation is defined */
+nav {
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+}
+
 /* Define your design variables from the Figma designs here */
 @theme {
   --color-oasys-blue: #3b82f6; /* */

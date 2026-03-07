@@ -4,7 +4,7 @@ export default function UploadMediaPage() {
   return (
     <div className="pt-32 px-10 min-h-screen">
       {/* Main Container */}
-      <div className="bg-dark-card p-12 shadow-2xl min-h-[700px] flex flex-col relative overflow-hidden">
+      <div className="bg-dark-card p-12 shadow-2xl min-h-175 flex flex-col relative overflow-hidden">
         
         {/* Header Section */}
         <div className="flex justify-between items-start mb-8">
@@ -34,8 +34,8 @@ export default function UploadMediaPage() {
         </div>
 
         {/* Centralized Upload Dropzone - Matching upload_media.png */}
-        <div className="flex-grow flex items-center justify-center mt-4">
-          <div className="w-full h-full min-h-[450px] bg-[#D9D9D9] border-4 border-dashed border-oasysBlue/40 rounded-[40px] flex flex-col items-center justify-center text-black group hover:border-oasysBlue transition-all cursor-pointer">
+        <div className="grow flex items-center justify-center mt-4">
+          <div className="w-full h-full min-h-112.5 bg-[#D9D9D9] border-4 border-dashed border-oasysBlue/40 rounded-[40px] flex flex-col items-center justify-center text-black group hover:border-oasysBlue transition-all cursor-pointer">
             {/* Plus Icon Circle */}
             <div className="w-24 h-24 bg-oasysBlue rounded-full mb-8 flex items-center justify-center text-white text-5xl font-light shadow-lg group-hover:scale-110 transition-transform">
               +

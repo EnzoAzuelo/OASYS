@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export default function UploadMediaResult() {
   return (
-    <div className="pt-32 px-10 min-h-screen bg-[#1a1a1a]">
-      <div className="bg-[#262626] rounded-[40px] p-12 border border-white/5 shadow-2xl">
+    <div className="pt-32 px-10 min-h-screen bg-dark-bg">
+      <div className="bg-card-bg rounded-oasys p-12 border border-white/5 shadow-2xl">
         
         {/* Header Section */}
         <div className="mb-10">
@@ -71,7 +71,7 @@ export default function UploadMediaResult() {
 
             {/* Navigation back home */}
             <Link href="/" className="btn-blue w-full flex items-center justify-between px-8 py-4">
-              <span className="uppercase tracking-widest">Back to Home</span>
+              <span className="uppercase tracking-widest">Back to Home </span>
               <span className="w-6 h-6 bg-white rounded-full" />
             </Link>
           </div>

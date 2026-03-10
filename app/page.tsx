@@ -23,7 +23,6 @@ export default function HomePage() {
           className="btn-blue bg-zinc-700 hover:bg-zinc-600 flex-1 inline-flex items-center justify-center px-8 py-4 text-xl">
             Scan
           </Link>
-          {/*comment here*/}
         </div>
       </div>
     </main>

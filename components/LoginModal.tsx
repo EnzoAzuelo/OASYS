@@ -104,7 +104,7 @@ export default function LoginModal({ onClose }: { onClose: () => void }) {
             <div className={`absolute transition-all duration-700 ease-in-out flex flex-col items-center ${isLogin ? 'opacity-100 translate-x-0 delay-200' : 'opacity-0 -translate-x-12 pointer-events-none'}`}>
               <h2 className="text-4xl font-black mb-4">New Here?</h2>
               <p className="mb-8 font-medium text-white-100">Sign up and discover a great amount of new opportunities!</p>
-              <span className="text-sm mb-3 text-oasys-blue font-bold">Don't have an account?</span>
+              <span className="text-sm mb-3 text-oasys-blue font-bold">{"Don't have an account?"} </span>
               <button 
                 onClick={() => setIsLogin(false)}
                 className="border-2 border-white rounded-full px-12 py-3 font-bold hover:bg-white hover:text-[#262626] transition-all active:scale-95"

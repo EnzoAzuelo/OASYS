@@ -4,7 +4,7 @@
   .nav-hidden {
     transform: translateY(-100%);
     opacity: 0;
-    pointer-events: none; /* Prevents clicking links while invisible */
+    pointer-events: none;
   }
 
   .nav-visible {
@@ -14,12 +14,10 @@
   }
 }
 
-/* Ensure the smooth animation is defined */
 nav {
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
 }
 
-/* Define your design variables from the Figma designs here */
 @theme {
   --color-oasys-blue: #3b82f6;
   --color-dark-bg: #1a1a1a;   
@@ -28,7 +26,6 @@ nav {
   --spacing-150: 600px;
 }
 
-/* Base styles using standard CSS (avoiding @apply here prevents the error) */
 :root {
   background-color: var(--color-dark-bg);
   color: white;

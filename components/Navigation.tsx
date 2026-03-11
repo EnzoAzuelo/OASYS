@@ -12,10 +12,8 @@ export default function Navigation() {
       const currentScrollY = window.scrollY;
 
       if (currentScrollY > lastScrollY && currentScrollY > 50) {
-        // Scrolling DOWN
         setIsVisible(false);
       } else {
-        // Scrolling UP
         setIsVisible(true);
       }
       
@@ -33,8 +31,7 @@ export default function Navigation() {
   return (
     <>
       <nav 
-        className={`fixed top-0 w-full z-50 flex justify-between items-center p-8 ${ isVisible ? 'nav-visible' : 'nav-hidden'
-        }`}
+        className={`fixed top-0 w-full z-50 flex justify-between items-center p-8 ${ isVisible ? 'nav-visible' : 'nav-hidden' }`}
         style={{ backgroundColor: isVisible ? 'transparent' : 'rgba(26, 26, 26, 0.9)' }}
       >
         {/* Logo/Avatar */}

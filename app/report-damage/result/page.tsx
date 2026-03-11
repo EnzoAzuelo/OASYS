@@ -78,7 +78,7 @@ export default function ResultPage() {
             </div>
 
             <Link href="/" className="btn-blue w-full flex items-center justify-center px-8 py-4">
-              <span className="font-bold">Proceed</span>
+              <span className="font-bold">Submit Report</span>
             </Link>
           </div>
         </div>
